@@ -1,11 +1,9 @@
 'use strict';
-
 let invoiceConfig = {
   PSTrate: 0.08,
   GSTrate: 0.05,
   nightlyRate: 175,
 };
-
 function getTaxRate(type) {
   switch (type) {
     case 'PST':
@@ -16,11 +14,9 @@ function getTaxRate(type) {
       return 0;
   }
 }
-
 function getNightlyRate() {
   return invoiceConfig.nightlyRate;
 }
-
 function setTaxRate(type, value) {
   switch (type) {
     case 'PST':
@@ -31,11 +27,9 @@ function setTaxRate(type, value) {
       break;
   }
 }
-
 function setNightlyRate(value) {
   invoiceConfig.nightlyRate = value;
 }
-
 (() => {
   window.addEventListener('load', (event) => {
     newInvoice.addEventListener('click', (event) => {
