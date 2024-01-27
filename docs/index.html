@@ -2,20 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hotel Invoice</title>
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
     <link rel="icon" href="data:," />
-    <script src="main.js"></script>
-    <script src="app.js"></script>
   </head>
   <body>
     <header>
       <h1>Hotel Invoice</h1>
-      <h2 id="guestName">Welcome, Guest!</h2>
+      <p>Guest: <span id="guestName">John Doe</span></p>
     </header>
-
     <main>
       <table>
         <thead>
@@ -33,7 +29,7 @@
             <td id="subTotal">$100.00</td>
           </tr>
           <tr>
-            <td>PST (<span id="pstRate">8.00%</span>)</td>
+            <td>PST (<span id="pstRate">7.00%</span>)</td>
             <td id="pstAmount">$8.00</td>
           </tr>
           <tr>
@@ -48,7 +44,6 @@
       </table>
       <button type="button" id="newInvoice">New Invoice</button>
     </main>
-
     <footer>
       <p>DGL 113 2024WI Assignment #2</p>
     </footer>
